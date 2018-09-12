@@ -22,7 +22,7 @@ def run_game():
         while True:
             fu.check_events(ai_set, screen, ship, bullets)
             ship.update()
-            fu.update_bullets(bullets)
+            fu.update_bullets(bullets, screen)
             #Redraw screen during each pass of loop
             fu.update_screen(ai_set, screen, ship, bullets)
 
